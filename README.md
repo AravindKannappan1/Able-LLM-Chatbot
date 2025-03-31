@@ -58,43 +58,6 @@ To expand the chatbot's knowledge:
 3. Write multiple response variations.
 4. Add the new intent object to the `knowledgeBase` array.
 
-### Styling Modifications
-
-The chatbot's appearance can be customized by modifying the CSS:
-
-- **Color scheme** (currently using Able.co's blue branding).
-- **Message bubble styles**.
-- **Font choices and sizing**.
-- **Layout and dimensions**.
-
-## Advanced Enhancements
-
-For a more sophisticated implementation, consider:
-
-- **Backend integration**: Connect to Able.co's CRM or knowledge base for dynamic responses.
-- **Session context**: Remember earlier parts of the conversation for more coherent interactions.
-- **Machine learning**: Implement more advanced NLP for better intent recognition.
-- **Analytics**: Track common questions to identify gaps in website information.
-- **Handoff functionality**: Allow seamless transition to human support for complex inquiries.
-
-## Integration Guidelines
-
-To integrate this chatbot into Able.co's website:
-
-1. Host the JavaScript and HTML files on your web server.
-2. Include the necessary scripts in your website pages.
-3. Add the chatbot container element where you want it to appear.
-4. Optionally, implement a toggle button to show/hide the chatbot.
-
-## Maintenance
-
-To keep the chatbot up-to-date:
-
-- Regularly review and update the information in the knowledge base.
-- Add new intents based on common customer inquiries.
-- Refine existing responses based on user feedback.
-- Expand the pattern list for each intent to improve recognition accuracy.
-
 ## License
 
 This project is proprietary and created specifically for Able.co's use.
