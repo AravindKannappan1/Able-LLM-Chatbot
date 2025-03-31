@@ -1,63 +1,100 @@
-# Able.co Customer Support Chatbot
+# Able.co Enhanced Support Chatbot
 
-This project implements a simple FAQ chatbot for Able.co using a pattern-matching approach with natural language processing techniques. The chatbot provides information about Able's services, team, AI approach, and other frequently asked questions.
+## Overview
+This repository contains the code for Able.co's enhanced support chatbot, a web-based interface designed to provide comprehensive information about Able.co, its services, and its approach to AI-powered software development.
 
 ## Features
 
-- **Intent-based matching**: Identifies user intent through pattern matching and similarity calculations.
-- **Natural responses**: Provides multiple response variations for each intent to create a more natural conversation experience.
-- **Suggestion chips**: Clickable suggestions to guide users toward common questions.
-- **Mobile-friendly UI**: Responsive design that works on desktop and mobile devices.
-- **Easy extensibility**: Simple knowledge base structure for adding new intents and responses.
+### Comprehensive Knowledge Base
+- **Expanded Topics**: Covers 25+ topics including company information, services, AI approach, team structure, culture, future plans, competitors, projects, leadership, clients, remote work, hiring, technologies, and more
+- **Multiple Response Variations**: Each topic includes multiple response variations to maintain natural conversation flow
+- **Fallback Handling**: Intelligent fallback responses that guide users to available information
 
-## How It Works
+### Enhanced Intent Matching
+- **Fuzzy Pattern Matching**: Identifies user intent even with variant phrasing
+- **Keyword Expansion**: Additional keywords and phrases for broader matching capabilities
+- **Semantic Similarity**: Detects topic relevance through semantic analysis
+- **Context Awareness**: Maintains conversation context for more natural responses
 
-The chatbot uses a simple but effective intent recognition system:
+### Dynamic User Interface
+- **Contextual Suggestion Chips**: Suggestions change based on conversation context
+- **Responsive Design**: Mobile-friendly layout with smooth animations
+- **Visual Branding**: Incorporates Able.co branding elements
+- **Conversation History**: Maintains and displays full conversation history
 
-1. **Intent detection**: Analyzes user input to identify the most likely intent.
-2. **Pattern matching**: Matches words and phrases in the user's message to predefined patterns.
-3. **Similarity calculation**: Uses Jaccard similarity to find close matches even when wording differs.
-4. **Response generation**: Selects an appropriate response based on the identified intent.
-5. **Fallback handling**: Gracefully handles queries outside the chatbot's knowledge domain.
+### Forward-Looking Content
+- **Future Vision**: Includes information about company roadmap and strategic direction
+- **AI Evolution**: Insights about AI trends and Able's position in the evolving landscape
+- **Growth Strategy**: Details about expansion plans and focus areas
+- **Market Positioning**: Information about competitive landscape and differentiation
 
-## Core Functions
+## Implementation Details
 
-- **findIntent(userInput)**: Identifies the most relevant intent for the user's message.
-- **calculateSimilarity(str1, str2)**: Computes text similarity to catch variations in phrasing.
-- **generateResponse(userInput)**: Selects an appropriate response for the detected intent.
-- **processMessage(userMessage)**: Main entry point for getting a response to user input.
+### Core Components
+- Pure JavaScript implementation with no external dependencies
+- HTML5 and CSS3 for responsive interface
+- Object-oriented architecture for maintainability
 
-## UI Components
+### Key Classes
+- `AbleChatbot`: Main chatbot logic with intent matching and response generation
+- Knowledge base structured as intents with patterns and multiple response options
+- Additional keyword mappings for enhanced matching
 
-The chatbot interface includes:
+### Matching Algorithm
+The chatbot uses three layers of matching to identify user intent:
+1. Direct pattern matching with similarity threshold
+2. Expanded keyword matching for broader coverage
+3. Topic similarity detection for contextual understanding
 
-- **Message history display**: With distinct styling for user and bot messages.
-- **Input field with send button**: For user input.
-- **Suggestion chips**: Clickable suggestions for common queries.
-- **Able.co branding elements**: Ensuring a consistent brand experience.
+### UI Features
+- Message bubbles with distinct styling for user and bot messages
+- Auto-scrolling chat container
+- Suggestion chips that update based on conversation context
+- Clean, branded header and input area
 
-## Data Sources
+## How to Use
 
-The information in this chatbot was collected by web scraping Able.co's website and related online sources, focused on these key areas:
+1. Clone this repository
+2. Open `index.html` in a web browser
+3. Start interacting with the chatbot by typing questions or clicking suggestion chips
 
-- **Company background and history**.
-- **Services and offerings**.
-- **AI approach and methodologies**.
-- **Team composition and structure**.
-- **Value propositions and benefits**.
-- **Development process**.
+## Customization
 
-## Customization Options
+### Adding New Topics
+To add new topics to the knowledge base, add an object to the `knowledgeBase` array with:
+- `intent`: Unique identifier for the topic
+- `patterns`: Array of phrases that should trigger this topic
+- `responses`: Array of response variations
 
-### Adding New Intents
+Example:
+```javascript
+{
+    intent: "new_topic",
+    patterns: ["keyword1", "keyword2", "phrase1"],
+    responses: [
+        "Response variation 1",
+        "Response variation 2",
+        "Response variation 3"
+    ]
+}
+```
 
-To expand the chatbot's knowledge:
+### Adding Keywords
+To improve matching for existing topics, add entries to the `additionalKeywords` object:
 
-1. Identify new topics or questions to cover.
-2. Create patterns that users might use to ask about these topics.
-3. Write multiple response variations.
-4. Add the new intent object to the `knowledgeBase` array.
+```javascript
+this.additionalKeywords = {
+    "existing_intent": ["new keyword", "new phrase"]
+}
+```
+
+## Future Improvements
+- Integration with backend API for more dynamic responses
+- User authentication for personalized experiences
+- Analytics tracking for conversation insights
+- Multi-language support
+- Voice interaction capabilities
+- Expansion from Key Word to Language Flexibility
 
 ## License
-
-This project is proprietary and created specifically for Able.co's use.
+Copyright © 2025 Able.co - All Rights Reserved
