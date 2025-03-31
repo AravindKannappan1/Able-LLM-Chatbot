@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800">
+  <!-- Background and styles -->
+  <style>
+    .box {
+      fill: white;
+      stroke: #0066cc;
+      stroke-width: 2;
+      rx: 8;
+      ry: 8;
+    }
+    .process-box {
+      fill: #e6f2ff;
+      stroke: #0066cc;
+      stroke-width: 2;
+      rx: 8;
+      ry: 8;
+    }
+    .data-box {
+      fill: #f1f0f0;
+      stroke: #0066cc;
+      stroke-width: 2;
+      rx: 8;
+      ry: 8;
+    }
+    .title {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 24px;
+      font-weight: bold;
+      fill: #0066cc;
+    }
+    .subtitle {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 18px;
+      font-weight: bold;
+      fill: #333;
+    }
+    .label {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 14px;
+      fill: #333;
+    }
+    .sub-label {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 12px;
+      fill: #555;
+    }
+    .arrow {
+      stroke: #0066cc;
+      stroke-width: 2;
+      fill: none;
+      marker-end: url(#arrowhead);
+    }
+    .dashed-arrow {
+      stroke: #0066cc;
+      stroke-width: 2;
+      stroke-dasharray: 5,5;
+      fill: none;
+      marker-end: url(#arrowhead);
+    }
+  </style>
+
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#0066cc" />
+    </marker>
+  </defs>
+
+  <!-- Main title -->
+  <text x="500" y="40" text-anchor="middle" class="title">Able.co Enhanced Chatbot: LLM Architecture Workflow</text>
+
+  <!-- User Interface Layer -->
+  <rect x="50" y="80" width="900" height="100" class="box" />
+  <text x="500" y="110" text-anchor="middle" class="subtitle">User Interface Layer</text>
+  
+  <rect x="100" y="130" width="180" height="30" rx="15" ry="15" fill="#e6f2ff" stroke="#0066cc" />
+  <text x="190" y="150" text-anchor="middle" class="label">User Input</text>
+  
+  <rect x="400" y="130" width="180" height="30" rx="15" ry="15" fill="#e6f2ff" stroke="#0066cc" />
+  <text x="490" y="150" text-anchor="middle" class="label">Chatbot Messages</text>
+  
+  <rect x="700" y="130" width="180" height="30" rx="15" ry="15" fill="#e6f2ff" stroke="#0066cc" />
+  <text x="790" y="150" text-anchor="middle" class="label">Suggestion Chips</text>
+
+  <!-- LLM Processing Layer -->
+  <rect x="50" y="220" width="900" height="400" class="box" />
+  <text x="500" y="250" text-anchor="middle" class="subtitle">LLM Processing Layer</text>
+  
+  <!-- Input Processing -->
+  <rect x="100" y="280" width="180" height="100" class="process-box" />
+  <text x="190" y="310" text-anchor="middle" class="label">Input Processing</text>
+  <text x="190" y="335" text-anchor="middle" class="sub-label">- Normalize text</text>
+  <text x="190" y="355" text-anchor="middle" class="sub-label">- Remove punctuation</text>
+  <text x="190" y="375" text-anchor="middle" class="sub-label">- Preserve original query</text>
+  
+  <!-- Intent Recognition -->
+  <rect x="400" y="280" width="200" height="220" class="process-box" />
+  <text x="500" y="310" text-anchor="middle" class="label">Intent Recognition</text>
+  
+  <!-- 3-Layer Recognition System -->
+  <rect x="420" y="330" width="160" height="40" rx="5" ry="5" fill="white" stroke="#0066cc" />
+  <text x="500" y="355" text-anchor="middle" class="sub-label">Direct Pattern Matching</text>
+  
+  <rect x="420" y="380" width="160" height="40" rx="5" ry="5" fill="white" stroke="#0066cc" />
+  <text x="500" y="405" text-anchor="middle" class="sub-label">Expanded Keyword Matching</text>
+  
+  <rect x="420" y="430" width="160" height="40" rx="5" ry="5" fill="white" stroke="#0066cc" />
+  <text x="500" y="455" text-anchor="middle" class="sub-label">Semantic Topic Similarity</text>
+  
+  <!-- Response Generation -->
+  <rect x="700" y="280" width="180" height="100" class="process-box" />
+  <text x="790" y="310" text-anchor="middle" class="label">Response Generation</text>
+  <text x="790" y="335" text-anchor="middle" class="sub-label">- Select from variations</text>
+  <text x="790" y="355" text-anchor="middle" class="sub-label">- Incorporate context</text>
+  <text x="790" y="375" text-anchor="middle" class="sub-label">- Generate suggestions</text>
+
+  <!-- Context Management -->
+  <rect x="400" y="520" width="200" height="80" class="process-box" />
+  <text x="500" y="550" text-anchor="middle" class="label">Conversation Management</text>
+  <text x="500" y="570" text-anchor="middle" class="sub-label">- Update context</text>
+  <text x="500" y="590" text-anchor="middle" class="sub-label">- Track topic transitions</text>
+
+  <!-- Knowledge Base Layer -->
+  <rect x="50" y="660" width="900" height="100" class="box" />
+  <text x="500" y="690" text-anchor="middle" class="subtitle">Knowledge Base Layer</text>
+  
+  <rect x="100" y="710" width="150" height="30" class="data-box" />
+  <text x="175" y="730" text-anchor="middle" class="label">25+ Intents</text>
+  
+  <rect x="300" y="710" width="150" height="30" class="data-box" />
+  <text x="375" y="730" text-anchor="middle" class="label">Pattern Database</text>
+  
+  <rect x="500" y="710" width="150" height="30" class="data-box" />
+  <text x="575" y="730" text-anchor="middle" class="label">Response Templates</text>
+  
+  <rect x="700" y="710" width="200" height="30" class="data-box" />
+  <text x="800" y="730" text-anchor="middle" class="label">Contextual Suggestion Maps</text>
+
+  <!-- Flow Arrows -->
+  <!-- User Input to Processing -->
+  <path d="M 190 160 L 190 280" class="arrow" />
+  
+  <!-- Input Processing to Intent Recognition -->
+  <path d="M 280 330 L 400 330" class="arrow" />
+  
+  <!-- Intent Recognition to Response Generation -->
+  <path d="M 600 330 L 700 330" class="arrow" />
+  
+  <!-- Response Generation to UI -->
+  <path d="M 790 280 L 790 160" class="arrow" transform="translate(0, -1)" />
+  
+  <!-- Intent Recognition to Context Management -->
+  <path d="M 500 500 L 500 520" class="arrow" />
+  
+  <!-- Context Management to Intent Recognition (feedback loop) -->
+  <path d="M 600 560 L 650 560 L 650 400 L 600 400" class="dashed-arrow" />
+  
+  <!-- Knowledge Base to Intent Recognition -->
+  <path d="M 375 710 L 375 650 L 500 650 L 500 500" class="dashed-arrow" />
+  
+  <!-- Knowledge Base to Response Generation -->
+  <path d="M 575 710 L 575 650 L 790 650 L 790 380" class="dashed-arrow" />
+  
+  <!-- Context Management to Suggestion Chips -->
+  <path d="M 400 560 L 350 560 L 350 650 L 790 650 L 790 160" class="dashed-arrow" transform="translate(0, -1)" />
+</svg>
