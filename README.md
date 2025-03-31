@@ -3,7 +3,7 @@
 ## Overview
 This repository contains the code for Able.co's enhanced support chatbot, a web-based interface designed to provide comprehensive information about Able.co, its services, and its approach to AI-powered software development.
 
-![Able.co Chatbot LLM Architecture Workflow](./images/llm-architecture-diagram.svg)
+![Able-LLM-Chatbot/](./images/llm-architecture-diagram.svg)
 
 ## Features
 
