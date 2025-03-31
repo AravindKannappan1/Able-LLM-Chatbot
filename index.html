@@ -150,7 +150,7 @@
     </div>
 
     <script>
-        // Able.co Customer Support Chatbot
+        // Able.co Enhanced Customer Support Chatbot
         class AbleChatbot {
             constructor() {
                 this.companyInfo = {
@@ -159,9 +159,16 @@
                     focus: "Software development combining human talent with AI tools",
                     teamSize: "60+ experts including strategists, designers, engineers, and project managers",
                     locations: "Distributed across North and South America",
-                    website: "https://able.co/"
+                    website: "https://able.co/",
+                    culture: "Collaborative, innovation-driven culture that values excellence, creativity, and work-life balance",
+                    futureVision: "Becoming the leading AI-enabled software development partner by continuously pioneering new approaches that combine human expertise with advanced AI tools",
+                    competitors: ["Traditional software development firms", "AI-focused tech startups", "Large consulting companies with digital arms"],
+                    leadership: "Experienced leadership team with backgrounds in technology, design, and business transformation",
+                    clientTypes: "Enterprises, startups, non-profits, and social impact organizations across various industries",
+                    successMetrics: "Client satisfaction, project delivery efficiency, innovation impact, and team happiness"
                 };
                 
+                // Enhanced knowledge base with more comprehensive topics
                 this.knowledgeBase = [
                     {
                         intent: "greeting",
@@ -289,27 +296,172 @@
                             "Security is built into our development processes. We implement robust data protection measures and follow best practices for secure AI deployment."
                         ]
                     },
+                    // New intents added for enhanced functionality
+                    {
+                        intent: "culture",
+                        patterns: ["culture", "work culture", "company culture", "work environment", "workplace", "values"],
+                        responses: [
+                            "At Able, we've built a collaborative, innovation-driven culture that values excellence, creativity, and work-life balance. Our distributed team works in a flat structure that encourages ownership and autonomy.",
+                            "Able's culture is defined by continuous learning, transparency, and inclusivity. We believe in empowering our team members to innovate while maintaining a healthy work-life integration.",
+                            "Our company culture is founded on principles of excellence, collaboration, and innovation. We foster an environment where diverse perspectives are valued and team members are encouraged to grow both professionally and personally."
+                        ]
+                    },
+                    {
+                        intent: "future_plans",
+                        patterns: ["future plans", "roadmap", "plans", "future", "vision", "where are you going", "direction", "next steps", "where do you see yourself"],
+                        responses: [
+                            "Able envisions becoming the leading AI-enabled software development partner by 2027. Our roadmap includes expanding our AI capabilities, developing proprietary tools, and growing our presence in key markets while maintaining our commitment to quality and innovation.",
+                            "We're focused on three key areas for our future: advancing our AI-human collaboration methodologies, expanding our service offerings in specialized domains like healthcare and fintech, and scaling our impact through strategic partnerships.",
+                            "Looking ahead, we plan to pioneer new approaches in AI-augmented software development, expand our team of experts, and continue to refine our methodologies to deliver even greater value and efficiency to our clients."
+                        ]
+                    },
+                    {
+                        intent: "competitors",
+                        patterns: ["competitors", "competition", "who competes", "market competition", "other companies like you", "rivals", "similar companies"],
+                        responses: [
+                            "We differentiate ourselves from traditional software development firms, AI-focused tech startups, and large consulting companies by offering a unique blend of human expertise and AI technologies. Our ability to deliver both quality and efficiency sets us apart from competitors.",
+                            "While we compete with various types of technology firms, our unique approach combining skilled humans with AI tools allows us to outperform traditional outsourcing companies on quality and specialized AI firms on comprehensive delivery capabilities.",
+                            "The competitive landscape includes traditional development agencies, AI startups, and large consulting firms. Able stands out through our proven track record of delivering AI-enhanced solutions that provide measurable business value."
+                        ]
+                    },
+                    {
+                        intent: "projects",
+                        patterns: ["projects", "current projects", "past projects", "what are you working on", "case studies", "portfolio", "success stories"],
+                        responses: [
+                            "We're currently working on diverse projects across healthcare, fintech, e-commerce, and social impact sectors. Our portfolio includes AI-enhanced platforms, mobile applications, enterprise systems, and digital transformation initiatives for organizations of all sizes.",
+                            "Able's project portfolio spans various industries and includes platforms that leverage AI for improved decision-making, systems that streamline complex workflows, and applications that deliver exceptional user experiences.",
+                            "Our recent projects include a healthcare platform that reduced patient wait times by 35%, a fintech solution that increased transaction processing efficiency by 60%, and a social impact initiative that connected resources to communities in need."
+                        ]
+                    },
+                    {
+                        intent: "leadership",
+                        patterns: ["leadership", "leaders", "executives", "management", "who leads", "ceo", "founder", "executive team"],
+                        responses: [
+                            "Able is led by an experienced leadership team with backgrounds in technology, design, and business transformation. Our leadership approach emphasizes collaboration, innovation, and a commitment to delivering exceptional value to our clients.",
+                            "Our leadership team brings together diverse expertise from top technology companies, startups, and consultancies. They guide our strategic direction while fostering a culture of excellence and continuous improvement.",
+                            "Able's leadership combines strategic vision with hands-on expertise. The team has successfully built and scaled technology organizations and brings this experience to guide our company and deliver exceptional results for our clients."
+                        ]
+                    },
+                    {
+                        intent: "clients",
+                        patterns: ["clients", "who do you work with", "customers", "client types", "partners", "industries"],
+                        responses: [
+                            "Able works with enterprises, startups, non-profits, and social impact organizations across various industries including healthcare, fintech, e-commerce, education, and government. Our diverse client base benefits from our flexible, tailored approach.",
+                            "Our clients range from Fortune 500 companies to innovative startups and mission-driven organizations. We particularly excel in sectors undergoing digital transformation and those looking to leverage AI for competitive advantage.",
+                            "We partner with forward-thinking organizations that value innovation and quality. Our client portfolio includes companies at various stages of growth across multiple industries who seek to build exceptional software products."
+                        ]
+                    },
+                    {
+                        intent: "remote_work",
+                        patterns: ["remote", "remote work", "work from home", "distributed", "global team", "virtual"],
+                        responses: [
+                            "As a distributed company since our founding, Able has mastered remote collaboration. Our team members work across North and South America, connected by shared values, advanced collaboration tools, and effective communication practices.",
+                            "We embrace a distributed-first approach, allowing us to bring together the best talent regardless of location. Our team spans multiple time zones, providing flexibility and continuity for our clients while maintaining a cohesive company culture.",
+                            "Able has been remote since day one, which gives us access to exceptional talent worldwide. We've developed proven methodologies for effective remote collaboration that ensure seamless project delivery and team integration."
+                        ]
+                    },
+                    {
+                        intent: "hiring",
+                        patterns: ["hiring", "jobs", "careers", "opportunities", "employment", "join team", "work for able", "positions"],
+                        responses: [
+                            "Able is always looking for exceptional talent to join our growing team. We hire strategists, designers, engineers, and project managers who share our values and passion for building great software. Check our website for current openings.",
+                            "We hire for passion, expertise, and cultural fit. Our recruitment process focuses on identifying individuals who excel in their craft and thrive in collaborative, autonomous environments. Visit our careers page for more information.",
+                            "Able offers exciting career opportunities for technology professionals who want to work at the intersection of human creativity and AI innovation. We provide competitive compensation, professional growth, and the chance to work on meaningful projects."
+                        ]
+                    },
+                    {
+                        intent: "technologies",
+                        patterns: ["technologies", "tech stack", "programming languages", "software", "tools", "frameworks", "platforms", "technical expertise"],
+                        responses: [
+                            "Able works with a wide range of technologies and frameworks, tailoring our approach to each project's needs. Our expertise spans frontend and backend development, cloud infrastructure, data science, and AI/ML implementation.",
+                            "We maintain expertise in modern technology stacks including React, Angular, Node.js, Python, Java, AWS, Azure, and Google Cloud. Additionally, we work with various AI frameworks and tools to enhance development efficiency.",
+                            "Our technical capabilities include full-stack development across multiple languages and frameworks, cloud-native architecture, database design and optimization, AI integration, and DevOps practices that ensure reliable, scalable solutions."
+                        ]
+                    },
+                    {
+                        intent: "ai_future",
+                        patterns: ["ai future", "future of ai", "ai trends", "ai predictions", "where is ai going", "ai evolution"],
+                        responses: [
+                            "We believe AI will continue to transform software development, gradually automating routine tasks while augmenting human creativity and decision-making. Able is positioned at the forefront of this evolution, continuously adapting our approach to leverage emerging AI capabilities.",
+                            "The future of AI in software development will likely bring increased automation of coding tasks, more sophisticated assistance for complex problem-solving, and better integration between human and machine capabilities. We're actively exploring these frontiers.",
+                            "AI is evolving toward more context-aware, specialized tools that enhance specific aspects of software development. We anticipate significant advancements in code generation, testing automation, and intelligent project management tools, all areas where Able is actively innovating."
+                        ]
+                    },
+                    {
+                        intent: "success_metrics",
+                        patterns: ["success metrics", "how do you measure success", "kpis", "goals", "performance", "evaluation", "outcomes"],
+                        responses: [
+                            "At Able, we measure success through multiple lenses: client satisfaction and business impact, project delivery efficiency, innovation impact, and team happiness. We track specific metrics in each area to ensure we're delivering exceptional value.",
+                            "Our success metrics include quantifiable outcomes like development time reduction, cost savings, and quality improvements, as well as qualitative measures like client testimonials and team engagement scores.",
+                            "We define success by the value we create for our clients, measuring factors like time-to-market reduction, technical quality, user adoption, and return on investment. We also track internal metrics related to team performance and satisfaction."
+                        ]
+                    },
+                    {
+                        intent: "pricing",
+                        patterns: ["pricing", "cost", "rates", "fees", "how much", "price", "investment", "budget"],
+                        responses: [
+                            "Able offers flexible engagement models with pricing structured around project scope, timeline, and resource requirements. Our AI-enhanced approach typically delivers 30-40% cost savings compared to traditional development methods.",
+                            "Our pricing reflects the value we deliver through our unique combination of human expertise and AI capabilities. We offer various engagement models including fixed-price projects, time and materials, and dedicated teams.",
+                            "While pricing varies based on project specifics, our clients typically see significant ROI through faster development times, reduced technical debt, and higher quality outcomes. We'd be happy to discuss your specific needs and provide tailored pricing information."
+                        ]
+                    },
                     {
                         intent: "fallback",
                         patterns: [],
                         responses: [
-                            "I'm not sure I understand your question. Could you rephrase or ask something about Able's services, team, or approach?",
-                            "I don't have information on that specific topic. Would you like to know about our services, AI approach, or company background instead?",
-                            "I'm still learning! That question is outside my current knowledge base. Can I help you with something about Able's offerings or team?"
+                            "Thanks for your question about Able. While I don't have specific information on that topic in my knowledge base, I'd be happy to help you with questions about our services, team, AI approach, or company vision. What else would you like to know?",
+                            "That's an interesting question. I don't have detailed information on that specific topic, but I can tell you about Able's services, technology approach, team structure, or future plans. What aspect of Able interests you most?",
+                            "I appreciate your inquiry. While I don't have complete information on that particular topic, I can share insights about Able's software development services, AI methodology, team culture, or client success stories. How else can I assist you today?"
                         ]
                     }
                 ];
+                
+                // Additional keywords and phrases for more flexible matching
+                this.additionalKeywords = {
+                    "culture": ["work environment", "working at able", "what's it like", "office culture", "company atmosphere", "employee experience"],
+                    "future_plans": ["growth plans", "long term plans", "strategic direction", "expansion plans", "future goals", "company vision", "five year plan", "roadmap"],
+                    "competitors": ["market position", "industry comparison", "alternatives", "other options", "competing services", "comparison"],
+                    "projects": ["client work", "example work", "what have you built", "examples", "showcase", "featured projects", "recent work"],
+                    "leadership": ["founding team", "co-founders", "chief", "head of", "director", "vp", "vice president", "executive leadership"],
+                    "clients": ["serve", "customer base", "client list", "who uses able", "types of customers", "client industries"],
+                    "remote_work": ["office locations", "where do you work", "work environment", "remote policy", "hybrid work"],
+                    "hiring": ["apply", "application", "interview process", "recruiting", "talent acquisition", "open positions"],
+                    "technologies": ["coding languages", "development stack", "software stack", "development tools", "programming expertise"],
+                    "ai_future": ["ai strategy", "ai roadmap", "future technology", "tech vision", "ai direction"],
+                    "success_metrics": ["measure results", "track success", "how do you know it works", "proof of success"],
+                    "pricing": ["packages", "payment", "engagement models", "project cost", "estimates", "how do you charge"]
+                };
             }
             
-            // Find the best matching intent for user input
+            // Enhanced intent matching with fuzzy matching and keyword expansion
             findIntent(userInput) {
                 const normalizedInput = userInput.toLowerCase().trim();
                 
-                // Check each intent's patterns for matches
+                // Check for direct pattern matches
                 for (const item of this.knowledgeBase) {
                     for (const pattern of item.patterns) {
                         if (normalizedInput.includes(pattern) || 
                             this.calculateSimilarity(normalizedInput, pattern) > 0.7) {
+                            return item;
+                        }
+                    }
+                }
+                
+                // Check additional keywords for broader matching
+                for (const [intent, keywords] of Object.entries(this.additionalKeywords)) {
+                    for (const keyword of keywords) {
+                        if (normalizedInput.includes(keyword) || 
+                            this.calculateSimilarity(normalizedInput, keyword) > 0.6) {
+                            return this.knowledgeBase.find(item => item.intent === intent);
+                        }
+                    }
+                }
+                
+                // Check for semantic similarity with topics
+                for (const item of this.knowledgeBase) {
+                    if (item.intent !== "fallback" && item.intent !== "greeting" && 
+                        item.intent !== "goodbye" && item.intent !== "thanks") {
+                        if (this.calculateTopicSimilarity(normalizedInput, item.intent) > 0.5) {
                             return item;
                         }
                     }
@@ -330,7 +482,26 @@
                 return intersection.size / union.size;
             }
             
-            // Generate a response based on user input
+            // Topic similarity for more flexible matching
+            calculateTopicSimilarity(input, topic) {
+                // Replace underscores with spaces for better matching
+                const processedTopic = topic.replace(/_/g, ' ');
+                
+                // Count occurrences of topic-related words
+                const topicWords = processedTopic.split(' ');
+                let matchCount = 0;
+                
+                for (const word of topicWords) {
+                    if (input.includes(word) && word.length > 3) {
+                        matchCount++;
+                    }
+                }
+                
+                // Calculate similarity score
+                return matchCount / topicWords.length;
+            }
+            
+            // Generate a more personalized response based on user input
             generateResponse(userInput) {
                 const matchedIntent = this.findIntent(userInput);
                 const responses = matchedIntent.responses;
@@ -376,25 +547,139 @@
                     const response = chatbot.processMessage(message);
                     addMessage(response, 'bot');
                     
-                    // Add updated suggestion chips after bot response
-                    updateSuggestionChips();
+                    // Add contextual suggestion chips after bot response
+                    updateContextualSuggestionChips(message, response);
                 }, 500); // Slight delay for natural feel
             }
         }
         
-        function updateSuggestionChips() {
-            // Example of dynamic suggestion chips based on conversation context
-            // In a real implementation, you might want to suggest based on previous interactions
-            const suggestions = [
-                "What services do you offer?",
-                "How do you use AI?",
-                "Tell me about your team",
-                "Benefits of working with Able"
-            ];
+        function updateContextualSuggestionChips(userMessage, botResponse) {
+            // Dynamic suggestion chips based on conversation context
+            let suggestions = [];
             
+            // Identify the current context from the user's message
+            const context = chatbot.findIntent(userMessage).intent;
+            
+            // Provide contextually relevant follow-up suggestions
+            switch(context) {
+                case "company_info":
+                    suggestions = [
+                        "What services do you offer?",
+                        "Tell me about your team",
+                        "What's your company culture like?",
+                        "Who are your competitors?"
+                    ];
+                    break;
+                case "services":
+                    suggestions = [
+                        "How do you use AI?",
+                        "What technologies do you work with?",
+                        "Tell me about your process",
+                        "What are your pricing models?"
+                    ];
+                    break;
+                case "ai_approach":
+                    suggestions = [
+                        "What's the future of AI?",
+                        "What AI tools do you use?",
+                        "How does this benefit clients?",
+                        "Show me project examples"
+                    ];
+                    break;
+                case "team":
+                    suggestions = [
+                        "What's your company culture?",
+                        "Are you hiring?",
+                        "Who leads the company?",
+                        "How do you work remotely?"
+                    ];
+                    break;
+                case "culture":
+                    suggestions = [
+                        "What's your team like?",
+                        "Future plans?",
+                        "How do you measure success?",
+                        "Remote work policy?"
+                    ];
+                    break;
+                case "future_plans":
+                    suggestions = [
+                        "Who are your competitors?",
+                        "Current projects?",
+                        "AI strategy?",
+                        "Growth plans?"
+                    ];
+                    break;
+                case "projects":
+                    suggestions = [
+                        "What technologies do you use?",
+                        "Client industries?",
+                        "Project success metrics?",
+                        "Development process?"
+                    ];
+                    break;
+                case "competitors":
+                    suggestions = [
+                        "What makes you different?",
+                        "Your advantages?",
+                        "Market position?",
+                        "Future vision?"
+                    ];
+                    break;
+                case "leadership":
+                    suggestions = [
+                        "Company history?",
+                        "Team structure?",
+                        "Future plans?",
+                        "Company values?"
+                    ];
+                    break;
+                case "clients":
+                    suggestions = [
+                        "Project examples?",
+                        "Industries you serve?",
+                        "Success stories?",
+                        "How do you measure success?"
+                    ];
+                    break;
+                case "technologies":
+                    suggestions = [
+                        "How do you use AI?",
+                        "Development process?",
+                        "Tech stack details?",
+                        "Future tech trends?"
+                    ];
+                    break;
+                case "pricing":
+                    suggestions = [
+                        "Engagement models?",
+                        "Project timeline examples?",
+                        "ROI examples?",
+                        "Value proposition?"
+                    ];
+                    break;
+                case "fallback":
+                    suggestions = [
+                        "What does Able do?",
+                        "How do you use AI?",
+                        "Tell me about your team",
+                        "What services do you offer?"
+                    ];
+                    break;
+                default:
+                    suggestions = [
+                        "What does Able do?",
+                        "How do you use AI?",
+                        "Tell me about your team",
+                        "Future plans?"
+                    ];
+            }
+            
+            // Update the suggestion chips in the UI
             const chipContainer = document.getElementById('suggestion-chips');
             chipContainer.innerHTML = ''; // Clear existing chips
             
+            // Create and add new suggestion chips
             suggestions.forEach(suggestion => {
                 const chip = document.createElement('div');
                 chip.className = 'suggestion-chip';
@@ -409,6 +694,28 @@
             handleUserMessage();
         }
         
+        // Enhanced word similarity for better matching
+        function similarityScore(str1, str2) {
+            // Convert strings to lowercase and remove punctuation
+            str1 = str1.toLowerCase().replace(/[^\w\s]/g, '');
+            str2 = str2.toLowerCase().replace(/[^\w\s]/g, '');
+            
+            // Split into arrays of words
+            const words1 = str1.split(/\s+/);
+            const words2 = str2.split(/\s+/);
+            
+            // Count matching words
+            let matchCount = 0;
+            words1.forEach(word => {
+                if (words2.includes(word) && word.length > 2) {
+                    matchCount++;
+                }
+            });
+            
+            // Calculate similarity as percentage of matching words
+            return (matchCount / Math.max(words1.length, words2.length));
+        }
+        
         // Event listeners
         sendButton.addEventListener('click', handleUserMessage);
         userInput.addEventListener('keypress', (e) => {
@@ -417,10 +724,29 @@
             }
         });
         
-        // Initial greeting
+        // Initial greeting and suggestions
         setTimeout(() => {
             const greeting = chatbot.knowledgeBase.find(item => item.intent === "greeting");
             addMessage(greeting.responses[0], 'bot');
+            
+            // Set initial suggestion chips
+            const initialSuggestions = [
+                "What does Able do?",
+                "How do you use AI?",
+                "Tell me about your team",
+                "What's your company culture like?"
+            ];
+            
+            const chipContainer = document.getElementById('suggestion-chips');
+            chipContainer.innerHTML = ''; // Clear default chips
+            
+            initialSuggestions.forEach(suggestion => {
+                const chip = document.createElement('div');
+                chip.className = 'suggestion-chip';
+                chip.textContent = suggestion;
+                chip.onclick = function() { useChip(suggestion); };
+                chipContainer.appendChild(chip);
+            });
         }, 300);
     </script>
 </body>
